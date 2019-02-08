@@ -1,0 +1,19 @@
+
+
+.nav__item {
+    margin: em(6) 0;
+}
+
+.nav__item a{
+    text-decoration: none;
+    width: 100%;
+    padding: em(12);
+    display: block;
+}
+
+.nav__item a:hover{
+    background-color: $color-primary;
+    color: white;
+    border-radius: em(8);
+}
+

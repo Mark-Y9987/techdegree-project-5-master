@@ -1,0 +1,52 @@
+// Buttons
+
+@mixin btn-mobile(
+    $display: block,
+    $border: 0,
+    $padding: em(12),
+    $margin: em(36) 0,
+    $background-color,
+    $color: white,
+    $border-radius: em(8),
+    $width: 100%,
+    $font-size: em(16),
+    $font-weight: bold){
+        display: $display;
+        border: $border;
+        padding: $padding;
+        margin: $margin;
+        background-color: $background-color;
+        color: $color;
+        border-radius: $border-radius;
+        width: $width;
+        font-size: $font-size;
+        font-weight: $font-weight;
+}
+
+
+// Media Queries
+
+
+
+// Flexbox settings
+
+@mixin grid__col{
+    @for $i from 1 through $grid-columns{
+        .grid__col--#{$i} {
+          margin: em(24) auto;
+          width: 100%;
+        }
+      }
+}
+
+// @mixin grid__col--theme--colors {
+//     @for $i from 1 through $grid-columns{
+//         .grid__col--#{$i}.theme__colors {
+//             @include btn-mobile($margin: em(6), 
+//                                 $background-color: map-get($grid-colors, #{$i})
+//                                     )
+//             }
+//         }
+//       }
+
+

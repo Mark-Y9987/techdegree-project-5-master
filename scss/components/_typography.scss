@@ -1,0 +1,23 @@
+
+.headline--primary{
+    color: $color-primary;
+    padding: em(12);
+}
+
+.headline--secondary{
+    margin: em(12);
+}
+
+.link{
+    color: $color-secondary;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blockquote{
+    border-left: solid em(5) $color-primary;
+    border-radius: em(6);
+    padding: 0 em(8);
+    font-style: italic;
+    font-size: em(24);
+}

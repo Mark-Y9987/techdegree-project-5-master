@@ -1,0 +1,22 @@
+
+
+.img--logo {
+    display: block;
+    margin: em(12) auto;
+}
+
+.img--avatar{
+    display: block;
+    margin: 0 auto;
+    padding: em(24);
+}
+
+.img--frame{
+    display: block;
+    border: solid em(2) $color-border;
+    padding: em(12);
+    margin: em(24) auto;
+}
+
+
+

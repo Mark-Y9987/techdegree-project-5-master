@@ -1,0 +1,25 @@
+
+.btn--default{
+    @include btn-mobile($background-color: $color-secondary);
+}
+
+
+.btn--success{
+    @include btn-mobile($background-color: $color-success);
+}
+
+.btn--error{
+    @include btn-mobile($background-color: $color-error);
+}
+
+.btn--warning{
+    @include btn-mobile($background-color: $color-warning);
+}
+
+.btn--info{
+    @include btn-mobile($background-color: $color-info);
+}
+
+// theme colors
+
+// @include grid__col--theme--colors;

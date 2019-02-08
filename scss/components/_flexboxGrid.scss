@@ -1,0 +1,53 @@
+
+.container {
+    margin: 0 em(24);
+}
+
+.grid__row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: em(24) 0;
+}
+
+
+
+@include grid__col;
+
+.grid__col--12.theme__colors {
+    @include btn-mobile($background-color: $color-grid-12, $color: $color-text);
+    margin: em(4) 0;
+}
+
+.grid__col--6.theme__colors {
+    @include btn-mobile($background-color: $color-grid-6, $color: $color-text);
+    margin: em(4) 0;
+}
+
+.grid__col--4.theme__colors {
+    @include btn-mobile($background-color: $color-grid-4, $color: $color-text);
+    margin: em(4) 0;
+
+}
+
+.grid__col--3.theme__colors {
+    @include btn-mobile($background-color: $color-grid-3, $color: $color-text);
+    margin: em(4) 0;
+}
+
+.grid__col--5.theme__colors {
+    @include btn-mobile($background-color: $color-grid-5, $color: $color-text);
+    margin: em(4) 0;
+}
+
+.grid__col--7.theme__colors {
+    @include btn-mobile($background-color: $color-grid-7, $color: $color-text);
+    margin: em(4) 0;
+}
+
+.grid__col--8.theme__colors {
+    @include btn-mobile($background-color: $color-grid-8, $color: $color-text);
+    margin: em(4) 0;
+}
