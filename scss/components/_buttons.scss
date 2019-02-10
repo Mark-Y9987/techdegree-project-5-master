@@ -1,25 +1,12 @@
 
-.btn--default{
+.form > .btn--default{
     @include btn-mobile($background-color: $color-secondary);
+        @include mq($large) {
+            @include btn-mobile($display: inline-block,
+                                $margin: em(36) em(0), 
+                                $background-color: $color-secondary);
+   }
 }
 
+@include buttons; 
 
-.btn--success{
-    @include btn-mobile($background-color: $color-success);
-}
-
-.btn--error{
-    @include btn-mobile($background-color: $color-error);
-}
-
-.btn--warning{
-    @include btn-mobile($background-color: $color-warning);
-}
-
-.btn--info{
-    @include btn-mobile($background-color: $color-info);
-}
-
-// theme colors
-
-// @include grid__col--theme--colors;

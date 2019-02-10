@@ -9,21 +9,21 @@ $color-background: white;
 
 $color-primary: #57DBB7;
 $color-secondary: #73DCEF;
-$color-default: #68D9F1;
-$color-success: #5DC57A;
-$color-error: #DD8B8B;
-$color-warning: #ED8257;
-$color-info: #856EA2;
+// $color-default: #68D9F1;
+// $color-success: #5DC57A;
+// $color-error: #DD8B8B;
+// $color-warning: #ED8257;
+// $color-info: #856EA2;
 $color-text: rgb(149, 149, 150);
 $color-border: #e2e2e2;
 
-$color-grid-3: #E3BCF1;
-$color-grid-4: #7DDFF4;
-$color-grid-5: #A7D5B0;
-$color-grid-6: #49a6c2;
-$color-grid-7: #D8AA9D;
-$color-grid-8: #E3A78C;
-$color-grid-12: #56bbaa;
+$btn-colors: (
+    default: #68D9F1,
+    success: #5DC57A,
+    error  : #DD8B8B,
+    warning: #ED8257,
+    info   : #856EA2
+);
 
 $grid-colors: (
     3: #E3BCF1,
@@ -32,7 +32,7 @@ $grid-colors: (
     6: #56AEC9,
     7: #D8AA9D,
     8: #E3A78C,
-    12: #E3A78C
+    12: #56bbaa
 );
 
 
@@ -43,3 +43,4 @@ $grid-columns: 12;
 
 // Breakpoints
 
+$large: 769px;

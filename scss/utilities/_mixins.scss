@@ -23,30 +23,66 @@
         font-weight: $font-weight;
 }
 
+@mixin buttons {
+    @each $type, $color in $btn-colors {
+        .grid__col--12 > .btn--#{$type} {
+            @include btn-mobile($background-color: $color);
+            @include mq($large) {
+                @include btn-mobile($display: inline-block,
+                                    $margin: em(36) em(6), 
+                                    $background-color: $color,
+                                    $width: 17%);
+}    
+        }
+    }
+}
 
 // Media Queries
 
-
+@mixin mq($large) {
+    @media (min-width: $large){
+        @content;
+    }
+}
 
 // Flexbox settings
 
-@mixin grid__col{
-    @for $i from 1 through $grid-columns{
-        .grid__col--#{$i} {
-          margin: em(24) auto;
-          width: 100%;
+@mixin grid__col {
+    @each $number, $color in $grid-colors {
+        .grid__col--#{$number} {
+            @include btn-mobile($margin: auto,
+                                $padding: 0,
+                                $background-color: none,
+                                $color: $color-text,
+                                );
+            margin: auto;
+            // width: 100%;
         }
-      }
+    }
+
 }
 
-// @mixin grid__col--theme--colors {
-//     @for $i from 1 through $grid-columns{
-//         .grid__col--#{$i}.theme__colors {
-//             @include btn-mobile($margin: em(6), 
-//                                 $background-color: map-get($grid-colors, #{$i})
-//                                     )
-//             }
-//         }
-//       }
+@mixin grid__system {
+    @each $number, $color in $grid-colors {
+        .grid__col--#{$number}.theme__colors {
+            @include btn-mobile($margin: em(2) auto,
+                                $background-color: $color,
+                                $color: $color-text);
+            margin: em(2) auto;
+            width: 100%;
+            @include mq($large) {
+                .theme__colors {
+                    margin: em(4);
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
 
 

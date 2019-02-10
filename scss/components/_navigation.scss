@@ -2,6 +2,11 @@
 
 .nav__item {
     margin: em(6) 0;
+    @include mq($large) {
+        display: inline-block;
+        align-items: center;
+        
+    }
 }
 
 .nav__item a{

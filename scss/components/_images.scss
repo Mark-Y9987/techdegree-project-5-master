@@ -3,6 +3,9 @@
 .img--logo {
     display: block;
     margin: em(12) auto;
+    @media (min-width: 769px){
+        margin: em(12) em(12);
+    }
 }
 
 .img--avatar{
