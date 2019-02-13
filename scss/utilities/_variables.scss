@@ -9,13 +9,11 @@ $color-background: white;
 
 $color-primary: #57DBB7;
 $color-secondary: #73DCEF;
-// $color-default: #68D9F1;
-// $color-success: #5DC57A;
-// $color-error: #DD8B8B;
-// $color-warning: #ED8257;
-// $color-info: #856EA2;
+
 $color-text: rgb(149, 149, 150);
 $color-border: #e2e2e2;
+
+// Color Maps
 
 $btn-colors: (
     default: #68D9F1,
@@ -34,12 +32,6 @@ $grid-colors: (
     8: #E3A78C,
     12: #56bbaa
 );
-
-
-// Grid Variables
-
-$grid-columns: 12;
-
 
 // Breakpoints
 

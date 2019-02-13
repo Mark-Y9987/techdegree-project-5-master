@@ -4,7 +4,7 @@
     $display: block,
     $border: 0,
     $padding: em(12),
-    $margin: em(36) 0,
+    $margin: em(36) auto,
     $background-color,
     $color: white,
     $border-radius: em(8),
@@ -27,12 +27,12 @@
     @each $type, $color in $btn-colors {
         .grid__col--12 > .btn--#{$type} {
             @include btn-mobile($background-color: $color);
-            @include mq($large) {
-                @include btn-mobile($display: inline-block,
-                                    $margin: em(36) em(6), 
-                                    $background-color: $color,
-                                    $width: 17%);
-}    
+                @include mq($large) {
+                    @include btn-mobile($display: inline-block,
+                                        $margin: em(36) em(6), 
+                                        $background-color: $color,
+                                        $width: 17%);
+            }    
         }
     }
 }
@@ -47,20 +47,30 @@
 
 // Flexbox settings
 
+// General Grid Layout
+
 @mixin grid__col {
     @each $number, $color in $grid-colors {
         .grid__col--#{$number} {
-            @include btn-mobile($margin: auto,
+            @include btn-mobile($margin: 0,
                                 $padding: 0,
                                 $background-color: none,
                                 $color: $color-text,
                                 );
+        }
+        .grid__col--9 {
+            width: 100%;
             margin: auto;
-            // width: 100%;
+        }
+        @include mq($large) {
+            .grid__col--12 {
+                text-align: center;
+            }
         }
     }
-
 }
+
+// Colored Grid System
 
 @mixin grid__system {
     @each $number, $color in $grid-colors {
@@ -71,9 +81,9 @@
             margin: em(2) auto;
             width: 100%;
             @include mq($large) {
-                .theme__colors {
                     margin: em(4);
-                }
+                    text-align: center;
+                
             }
         }
     }

@@ -1,13 +1,11 @@
 
 .headline--primary{
     color: $color-primary;
-    padding: em(12);
-    text-align: left;
+    @extend %align-left;
 }
 
 .headline--secondary{
-    margin: em(12);
-    text-align: left;
+    @extend %align-left;
 }
 
 .link{
